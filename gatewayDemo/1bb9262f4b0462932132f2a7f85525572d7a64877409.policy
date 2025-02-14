@@ -1,9 +1,12 @@
+@id("allow_one")
 permit(
-    principal in Workload::"Workload",
-    action == HTTP_Request::"GET",
-    resource in HTTP_Request::"HTTP_Request"
+  principal is gatewayDemo::Workload,
+  action == gatewayDemo::Action::"GET",
+  resource is gatewayDemo::HTTP_Request
 )
 when {
-    principal.access_token != None && 
-    principal.access_token.scope.contains("profiler")
+  (
+  (principal has "access_token") && 
+  ((principal["access_token"]) has "scope")) && 
+  (((principal["access_token"])["scope"]).contains("profiler"))
 };
