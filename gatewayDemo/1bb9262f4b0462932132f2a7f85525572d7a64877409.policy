@@ -6,5 +6,5 @@ permit(
 )
 when {
     principal.access_token != None && 
-    principal.access_token.scope.contains("profile")
+    principal.access_token.scope.contains("profilerr")
 };
