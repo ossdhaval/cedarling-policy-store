@@ -4,7 +4,13 @@
         "e9c14bfbddef31e077c571aeb26e36a6dc1c7c23167b": {
             "name": "qsg",
             "description": "quick start guide store",
-            "policies": {},
+            "policies": {
+                "9f4f8d8d2896826010201e91c006d03a7aad3163e6af": {
+                    "description": "allow_supreme_ruler",
+                    "creation_date": "2025-04-10T11:24:47.607112",
+                    "policy_content": "QGlkKCJhbGxvd19zdXByZW1lX3J1bGVyIikKcGVybWl0KAogIHByaW5jaXBhbCBpbiBKYW5zOjpSb2xlOjoiU3VwcmVtZVJ1bGVyIiwKICBhY3Rpb24sCiAgcmVzb3VyY2UKKTsK"
+                }
+            },
             "trusted_issuers": {
                 "7b3521765939d8c2ae58de57b0d382504aae0e645cc2": {
                     "name": "testIdp",
